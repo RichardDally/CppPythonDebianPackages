@@ -1,5 +1,5 @@
 # Developer tools
-cp -n .emacs ~/
+cp -np .emacs ~/
 apt-get install -y git emacs-nox cmake
 
 # C++ tools
