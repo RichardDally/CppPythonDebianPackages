@@ -9,6 +9,7 @@ apt-get install -y g++ clang valgrind kcachegrind
 apt-get install -y python-dev python-pip
 pip install -U pip
 pip install -U sphinx cython setuptools virtualenv
+pip install -U conan
 
 # Python optional packages
 pip install -U protobuf pycapnp
