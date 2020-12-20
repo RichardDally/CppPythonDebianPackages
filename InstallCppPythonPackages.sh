@@ -1,20 +1,16 @@
 # Developer tools
 cp -np .emacs ~/
-apt-get install -y git emacs-nox cmake
+apt install -y git emacs-nox cmake
+apt install build-essential libssl-dev libffi-dev
 
 # C++ tools
-apt-get install -y g++ clang valgrind kcachegrind
+apt install -y g++ clang valgrind kcachegrind
 
 # Python tools
-apt-get install -y python-dev python-pip
-pip install -U pip
-pip install -U sphinx cython setuptools virtualenv
-pip install -U conan
+apt install -y python-dev python3-pip
+pip3 install -U pip --user
+pip3 install -U sphinx cython setuptools virtualenv --user
+pip3 install -U conan --user
 
 # Python optional packages
-pip install -U protobuf pycapnp
-
-# Emacs Jedi configuration (run following commands from Emacs)
-# M-x package-install RET auto-complete
-# M-x package-install RET jedi
-# M-x jedi:install-server
+pip3 install -U protobuf pycapnp --user
